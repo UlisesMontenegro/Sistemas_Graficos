@@ -314,7 +314,6 @@ function init(){
     m1=mat4.create();
     mat4.translate(m1,m1,vec3.fromValues(0,10,0));
     mat4.rotate(m1,m1,Math.PI/4,vec3.fromValues(1,0,0));
-    mat4.scale(m1,m1,vec3.fromValues(0.5,0.5,0.5));
 
     modQ.applyMatrix(f(m1)); // aplico la matriz de modelado
 
@@ -331,8 +330,8 @@ function init(){
     // Modelo Letra G
 
     m3=mat4.create();
-    mat4.translate(m3,m3,vec3.fromValues(0,0,5));
-    mat4.scale(m3,m3,vec3.fromValues(0.25/2,1,0.5));
+    mat4.translate(m3,m3,vec3.fromValues(0,0,10));
+    mat4.scale(m3,m3,vec3.fromValues(0.25,1,1));
     mat4.rotate(m3,m3,Math.PI/2,vec3.fromValues(-1,0,0));
 
     modG.applyMatrix(f(m3));

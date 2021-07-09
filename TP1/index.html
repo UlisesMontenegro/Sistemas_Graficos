@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Ejemplo 01 Canvas</title>
+
+        <style>
+            body{
+                background-color: grey;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            canvas{
+                background-color: white;
+            }
+            textarea{
+                background-color: black;
+                background-color: white;
+            }
+            #titulo{
+                text-align:center;
+            }
+        </style>
+</head>
+
+<body>
+	<div id="titulo">
+
+        <h1>Sistemas Gráficos</h1>
+
+        <h2>WebGL Ejemplo 01 - Canvas y WebGL context</h2>
+
+		<canvas id="my-canvas" width="900" height="500">
+		    Your browser does not support the HTML5 canvas element.
+        </canvas>
+
+	</div>
+
+    <script src="shaders/vertexShader.glsl" id="shader-vs" type="x-shader/x-vertex"></script>
+    <script src="shaders/fragmentShader.glsl" id="shader-fs" type="x-shader/x-fragment"></script>
+	<script src="modules/initWebGL.js"></script>
+
+</body>
+</html>
